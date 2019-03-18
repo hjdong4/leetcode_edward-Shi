@@ -35,7 +35,7 @@ public class LetterCombinationsofaPhoneNumber {
             res.add(s);
             return;
         }
-        String letters = mapping[s.charAt(index) - '0'];
+        String letters = mapping[digits.charAt(index) - '0'];
         for (int i = 0; i < letters.length(); i++) {
             helper(res, digits, s + letters.charAt(i), index + 1);
         }
